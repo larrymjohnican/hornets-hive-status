@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-08-09T20:52:10.078Z",
+  "agents": [
+    {
+      "name": "Blocker-Tracker",
+      "state": "attention",
+      "trigger": "cron-daily",
+      "last_run": "2026-08-09T11:00:01Z"
+    },
+    {
+      "name": "Web-Dev",
+      "state": "idle",
+      "trigger": "manual",
+      "last_run": "2026-08-08T23:05:37Z"
+    },
+    {
+      "name": "Marketing-Prospect",
+      "state": "idle",
+      "trigger": "manual",
+      "last_run": "2026-07-14T23:47:30Z"
+    },
+    {
+      "name": "Finance-Report",
+      "state": "idle",
+      "trigger": "manual",
+      "last_run": "2026-07-23T00:29:18Z"
+    }
+  ]
+}

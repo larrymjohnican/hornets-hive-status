@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hive Control — Public Status</title>
+<style>
+  :root{
+    --void:#0A0E17; --panel:#131A29; --line:#232C40;
+    --ink:#E8EBF1; --muted:#7C8AA3; --blue:#2D8EF5; --amber:#F0A93B;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; min-height:100vh; padding:32px 16px 60px;
+    background:var(--void); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,'Inter',system-ui,sans-serif;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  h1{font-size:16px;letter-spacing:.12em;font-weight:700;margin:0 0 4px;}
+  p.sub{color:var(--muted);font-size:12px;margin:0 0 24px;}
+  ul.rows{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+  .row{
+    display:grid;grid-template-columns:14px 1fr auto auto;align-items:center;gap:12px;
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 14px;font-size:13px;
+  }
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--muted);}
+  .row[data-state="nominal"] .dot{background:var(--blue);}
+  .row[data-state="attention"] .dot{background:var(--amber);}
+  .row[data-state="attention"]{box-shadow:inset 3px 0 0 0 var(--amber);}
+  .name{font-weight:600;}
+  .trigger, .state, .last-run{color:var(--muted);font-size:11.5px;white-space:nowrap;}
+  .row[data-state="attention"] .state{color:var(--amber);}
+  footer{text-align:center;margin-top:26px;color:var(--muted);font-size:10.5px;letter-spacing:.03em;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>HIVE CONTROL — PUBLIC STATUS</h1>
+  <p class="sub">Hornets IT Solutions — status/timing only. Generated 2026-08-09T20:52:10.078Z.</p>
+  <ul class="rows">
+      <li class="row" data-state="attention">
+        <span class="dot"></span>
+        <span class="name">Blocker-Tracker</span>
+        <span class="trigger">Cron · Daily</span>
+        <span class="state">Needs attention</span>
+        <span class="last-run">2026-08-09T11:00:01Z</span>
+      </li>
+      <li class="row" data-state="idle">
+        <span class="dot"></span>
+        <span class="name">Web-Dev</span>
+        <span class="trigger">Manual</span>
+        <span class="state">Idle</span>
+        <span class="last-run">2026-08-08T23:05:37Z</span>
+      </li>
+      <li class="row" data-state="idle">
+        <span class="dot"></span>
+        <span class="name">Marketing-Prospect</span>
+        <span class="trigger">Manual</span>
+        <span class="state">Idle</span>
+        <span class="last-run">2026-07-14T23:47:30Z</span>
+      </li>
+      <li class="row" data-state="idle">
+        <span class="dot"></span>
+        <span class="name">Finance-Report</span>
+        <span class="trigger">Manual</span>
+        <span class="state">Idle</span>
+        <span class="last-run">2026-07-23T00:29:18Z</span>
+      </li>
+  </ul>
+  <footer>See status.json for the same data as JSON.</footer>
+</div>
+</body>
+</html>
