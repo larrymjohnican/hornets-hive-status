@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T20:52:10.078Z",
+  "generated_at": "2026-08-09T20:52:29.859Z",
   "agents": [
     {
       "name": "Blocker-Tracker",
@@ -24,6 +24,12 @@
       "state": "idle",
       "trigger": "manual",
       "last_run": "2026-07-23T00:29:18Z"
+    },
+    {
+      "name": "_test",
+      "state": "nominal",
+      "trigger": "manual",
+      "last_run": "2026-08-09T21:00:00Z"
     }
   ]
 }
