@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-09T20:52:51.964Z",
+  "generated_at": "2026-08-09T21:23:40.945Z",
   "agents": [
     {
       "name": "Blocker-Tracker",
-      "state": "attention",
+      "state": "nominal",
       "trigger": "cron-daily",
-      "last_run": "2026-08-09T11:00:01Z"
+      "last_run": "2026-08-09T21:23:40Z"
     },
     {
       "name": "Web-Dev",
